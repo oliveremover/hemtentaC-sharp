@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/03cb01/Projects/C#/hemtentaC-sharp/hemtentaC-sharp.csproj": {}
+  },
+  "projects": {
+    "/Users/03cb01/Projects/C#/hemtentaC-sharp/hemtentaC-sharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/03cb01/Projects/C#/hemtentaC-sharp/hemtentaC-sharp.csproj",
+        "projectName": "hemtentaC-sharp",
+        "projectPath": "/Users/03cb01/Projects/C#/hemtentaC-sharp/hemtentaC-sharp.csproj",
+        "packagesPath": "/Users/03cb01/.nuget/packages/",
+        "outputPath": "/Users/03cb01/Projects/C#/hemtentaC-sharp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/03cb01/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
