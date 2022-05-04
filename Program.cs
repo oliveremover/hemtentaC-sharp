@@ -58,7 +58,9 @@ namespace Apartment_application
             string[] words = additional_choosen.Split(" ");
             for( int i=0; i<words.Length; i++)
                 {
-                    words[i] = obj.additional[i];
+                    if (words[i] == obj.additional[i]){
+                        
+                    }
                 }
 
             
