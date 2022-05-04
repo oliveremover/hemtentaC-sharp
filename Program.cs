@@ -21,18 +21,22 @@ namespace Apartment_application
             Console.WriteLine("Choose your destiny!");
             Choose_sizes();
             string size_choosen = Console.ReadLine();
-            Console.WriteLine("What standard with the size:");
+            Console.WriteLine("What comes with the apartment");
             if (size_choosen == "1"){
                 One();
+                Choose_additional();
             }
             else if (size_choosen == "2"){
                 Two();
+                Choose_additional();
             }
             else if (size_choosen == "3"){
                 Three();
+                Choose_additional();
             }
             else if (size_choosen == "4"){
                 Four();
+                Choose_additional();
             }
             else {
                 Error();
@@ -44,6 +48,19 @@ namespace Apartment_application
             Console.WriteLine(" ");
             Console.WriteLine("Sizes avalible: (ony number)");
             Console.WriteLine(string.Join(" : ", obj.sizes)); 
+            
+        }
+        void Choose_additional(){
+            Console.WriteLine("Add extra:");
+            Console.WriteLine("Extra avalible: (ony number)");
+            Console.WriteLine(string.Join(" : ", obj.additional)); 
+            string additional_choosen = Console.ReadLine();
+            string[] words = additional_choosen.Split(" ");
+            for( int i=0; i<words.Length; i++)
+                {
+                    words[i] = obj.additional[i];
+                }
+
             
         }
         void One(){

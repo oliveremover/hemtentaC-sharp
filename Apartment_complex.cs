@@ -7,6 +7,7 @@ namespace Apartment_application
             public string[] uniqe= {"living_room", "sauna", "tumbler lock", "balcony"};
             public string[] additional = {"kitchenisland", "tiles", "wet room carpet"};
             public string[] sizes = {"1 room", " 2 room", "3 room", "4 room"};
+            public string[] kitchen_island_type = {"Granite Black", " Granite White", "Laminate Black", "Laminate White"};
 
         }
 }
