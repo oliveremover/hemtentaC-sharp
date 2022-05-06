@@ -17,32 +17,34 @@ namespace Apartment_application
 
         
         public void Start(){
+            obj.viewer_have_choosen.Clear();
             Console.WriteLine("Choose your destiny!");
             Choose_sizes();
             string size_choosen = Console.ReadLine();
             Console.WriteLine("What comes with the apartment");
             if (size_choosen == "1"){
                 One();
-                continue;
+                Choose_additional();
+                Print_dict();
             }
             else if (size_choosen == "2"){
                 Two();
-                continue;
+                Choose_additional();
+                Print_dict();
             }
             else if (size_choosen == "3"){
                 Three();
-                continue;
+                Choose_additional();
+                Print_dict();
             }
             else if (size_choosen == "4"){
                 Four();
-                continue;
+                Choose_additional();
+                Print_dict();
             }
             else {
                 Error();
             }
-            Choose_additional();
-
-            Print_dict();
         } 
         
         void Choose_sizes(){
@@ -75,7 +77,14 @@ namespace Apartment_application
         }
 
         void Choose_kitchen_island(){
-
+            Console.WriteLine(" ");
+            Console.WriteLine("Choose kitchen island");
+            Console.WriteLine(string.Join(" : ", obj.kitchen_island_type));
+            string type;
+            type = Console.ReadLine();
+            if (obj.kitchen_island_type.Any(type.Contains)){
+                obj.viewer_have_choosen.Add(type, "True");
+            }
         }
         void One(){
             Console.WriteLine(" ");
