@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\C#\\hemtentaC-sharp\\hemtentaC-sharp.csproj": {}
+    "/Users/03cb01/Projects/C#/hemtentaC-sharp/hemtentaC-sharp.csproj": {}
   },
   "projects": {
-    "C:\\C#\\hemtentaC-sharp\\hemtentaC-sharp.csproj": {
+    "/Users/03cb01/Projects/C#/hemtentaC-sharp/hemtentaC-sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C#\\hemtentaC-sharp\\hemtentaC-sharp.csproj",
+        "projectUniqueName": "/Users/03cb01/Projects/C#/hemtentaC-sharp/hemtentaC-sharp.csproj",
         "projectName": "hemtentaC-sharp",
-        "projectPath": "C:\\C#\\hemtentaC-sharp\\hemtentaC-sharp.csproj",
-        "packagesPath": "C:\\Users\\bylun\\.nuget\\packages\\",
-        "outputPath": "C:\\C#\\hemtentaC-sharp\\obj\\",
+        "projectPath": "/Users/03cb01/Projects/C#/hemtentaC-sharp/hemtentaC-sharp.csproj",
+        "packagesPath": "/Users/03cb01/.nuget/packages/",
+        "outputPath": "/Users/03cb01/Projects/C#/hemtentaC-sharp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bylun\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/03cb01/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }

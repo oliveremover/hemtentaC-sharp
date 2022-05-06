@@ -9,5 +9,14 @@ namespace Apartment_application
             public string[] sizes = {"1 room", " 2 room", "3 room", "4 room"};
             public string[] kitchen_island_type = {"Granite Black", " Granite White", "Laminate Black", "Laminate White"};
 
+            public Dictionary<string, string> viewer_have_choosen =
+                new Dictionary<string, string>();
+            string standard_string = string.Join(" : ", standard);
+            public void Run(string size_chosen){
+                viewer_have_choosen.Add("Size", size_chosen);
+                viewer_have_choosen.Add("Standard", standard_string);
+            }
+
+ 
         }
 }
