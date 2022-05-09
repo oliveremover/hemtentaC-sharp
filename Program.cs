@@ -25,21 +25,25 @@ namespace Apartment_application
             if (size_choosen == "1"){
                 One();
                 Choose_additional();
+                Choose_kitchen_island();
                 Print_dict();
             }
             else if (size_choosen == "2"){
                 Two();
                 Choose_additional();
+                Choose_kitchen_island();
                 Print_dict();
             }
             else if (size_choosen == "3"){
                 Three();
                 Choose_additional();
+                Choose_kitchen_island();
                 Print_dict();
             }
             else if (size_choosen == "4"){
                 Four();
                 Choose_additional();
+                Choose_kitchen_island();
                 Print_dict();
             }
             else {
@@ -68,11 +72,12 @@ namespace Apartment_application
             pre_list = split.Split(',').ToList();
             foreach(var l in pre_list)
             {
-                for (int i = 0; i < obj.additional.Length; i++){
-                    if (l == obj.additional[i]){
-                        obj.viewer_have_choosen.Add(obj.additional[i], "True");
+                
+                    if (obj.additional.Any(l.Contains)){
+                        Console.WriteLine(l);
+                        obj.viewer_have_choosen.Add(l, "True");
                     }
-                }
+                
             }
         }
 
