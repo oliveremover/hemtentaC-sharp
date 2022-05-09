@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/hemtentaC-sharp.csproj": {}
+    "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/hemtentaC-sharp.csproj": {}
   },
   "projects": {
-    "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/hemtentaC-sharp.csproj": {
+    "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/hemtentaC-sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/hemtentaC-sharp.csproj",
+        "projectUniqueName": "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/hemtentaC-sharp.csproj",
         "projectName": "hemtentaC-sharp",
-        "projectPath": "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/hemtentaC-sharp.csproj",
+        "projectPath": "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/hemtentaC-sharp.csproj",
         "packagesPath": "/Users/03cb01/.nuget/packages/",
-        "outputPath": "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/obj/",
+        "outputPath": "/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/03cb01/.nuget/NuGet/NuGet.Config"

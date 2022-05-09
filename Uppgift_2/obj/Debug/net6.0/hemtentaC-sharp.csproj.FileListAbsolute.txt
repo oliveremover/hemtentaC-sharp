@@ -1,0 +1,15 @@
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/bin/Debug/net6.0/hemtentaC-sharp
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/bin/Debug/net6.0/hemtentaC-sharp.deps.json
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/bin/Debug/net6.0/hemtentaC-sharp.runtimeconfig.json
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/bin/Debug/net6.0/hemtentaC-sharp.dll
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/bin/Debug/net6.0/hemtentaC-sharp.pdb
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/hemtentaC-sharp.csproj.AssemblyReference.cache
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/hemtentaC-sharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/hemtentaC-sharp.AssemblyInfoInputs.cache
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/hemtentaC-sharp.AssemblyInfo.cs
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/hemtentaC-sharp.csproj.CoreCompileInputs.cache
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/hemtentaC-sharp.dll
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/refint/hemtentaC-sharp.dll
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/hemtentaC-sharp.pdb
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/hemtentaC-sharp.genruntimeconfig.cache
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_2/obj/Debug/net6.0/ref/hemtentaC-sharp.dll
