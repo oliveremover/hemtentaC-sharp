@@ -10,6 +10,10 @@ public class Movies
     protected List<string> seats_map = new List<string>();
 
     protected List<string> seats_taken = new List<string>();
+
+    protected List<string> seats_reserved = new List<string>();
+    protected List<string> seats_avalible = new List<string>();
+    
     //Properties.
     protected int ID { get; set; }
     protected string Title { get; set; }
@@ -56,51 +60,53 @@ public class Movies
         this.Seat = seat;
 
         object value = row + " : " + seat;
+        Convert.ToString(value);
+        Console.WriteLine(value);
         for(int i = 0; i < seats_map.Count; i++){
-            if(seats_map[i] == value.ToString()){
+            if(seats_map.Contains(value)){
                 seats_map[i] = "Occupied";
             }
         }
     }
 
     public void create_seat_map(){
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 1 : " + i;
             seats_map.Add(value.ToString());
         }
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 2 : " + i;
             seats_map.Add(value.ToString());
         }
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 3 : " + i;
             seats_map.Add(value.ToString());
         }
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 4 : " + i;
             seats_map.Add(value.ToString());
         }
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 5 : " + i;
             seats_map.Add(value.ToString());
         }
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 6 : " + i;
             seats_map.Add(value.ToString());
         }
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 7 : " + i;
             seats_map.Add(value.ToString());
         }
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 8 : " + i;
             seats_map.Add(value.ToString());
         }
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 9 : " + i;
             seats_map.Add(value.ToString());
         }
-        for(int i = 0; i <= 15; i++){
+        for(int i = 1; i <= 15; i++){
             object value = "Row 10 : " + i;
             seats_map.Add(value.ToString());
         }
@@ -108,18 +114,23 @@ public class Movies
     public void show_seat_map(string number_of_tickets)
         {
         for(int i = 0; i < seats_map.Count;i++){
-            if (seats_map[i] == "Occupied"){
-
+            if (seats_map[i] == "Occupied" && seats_avalible.Count >= Int32.Parse(number_of_tickets)){
+                for(int o = 0; o < seats_avalible.Count; o++){
+                    seats_reserved.Add(seats_avalible[o]);
+                }
+                seats_avalible.Clear();
             }
             else{
-                if(seats_map.Where(s=>s!=null && s.StartsWith("S")).Count()){
-                    
-                }
-                Console.WriteLine(seats_map[i]);
+                seats_avalible.Add(seats_map[i]);
             }
         }
+        for(int i = 0; i < seats_avalible.Count; i++){
+            seats_reserved.Add(seats_avalible[i]);
+        }
+        for(int i = 0; i < seats_reserved.Count; i++){
+            Console.WriteLine(seats_reserved[i]);
+        }
     }
-
     // Virtual method override of the ToString method that is inherited
     // from System.Object.
     public override string ToString() =>
