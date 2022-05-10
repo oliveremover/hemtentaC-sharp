@@ -1,4 +1,4 @@
-using System;
+using System.Linq;
 namespace Cinema_application
 {
 public class Movies
@@ -17,6 +17,7 @@ public class Movies
     protected int MovieLength { get; set; }
     protected string Row { get; set; }
     protected int Seat{ get; set; }
+    protected string Number_of_tickets{ get; set; }
 
     // Default constructor. If a derived class does not invoke a base-
     // class constructor explicitly, the default constructor is called
@@ -104,9 +105,18 @@ public class Movies
             seats_map.Add(value.ToString());
         }
     }
-    public void show_seat_map(){
+    public void show_seat_map(string number_of_tickets)
+        {
         for(int i = 0; i < seats_map.Count;i++){
-            Console.WriteLine(seats_map[i]);
+            if (seats_map[i] == "Occupied"){
+
+            }
+            else{
+                if(seats_map.Where(s=>s!=null && s.StartsWith("S")).Count()){
+                    
+                }
+                Console.WriteLine(seats_map[i]);
+            }
         }
     }
 

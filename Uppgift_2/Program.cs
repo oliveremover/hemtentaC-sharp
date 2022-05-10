@@ -32,19 +32,20 @@ namespace Cinema_application
             Console.WriteLine(" ");
             Console.WriteLine(" ");
             Console.WriteLine("Number of tickets: ");
+
             string number_of_tickets = Console.ReadLine();
             if (movie_to_watch == "1"){
-                movie1.show_seat_map();
+                movie1.show_seat_map(number_of_tickets);
             }
             else if (movie_to_watch == "2"){
-                movie2.show_seat_map();
+                movie2.show_seat_map(number_of_tickets);
             }
             
             
             Console.WriteLine(" ");
             Console.WriteLine(" ");
             Console.WriteLine("What seats do you want: ");
-            
+
             // Create an instance of ChangeRequest by using the constructor in
             // the derived class that takes four arguments.
             //Book_seats book = new Book_seats(movie_to_watch, row, seat, 120);
