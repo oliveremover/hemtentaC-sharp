@@ -57,14 +57,15 @@ public class Movies
         this.Row = row;
         this.Seat = seat;
         string[] splitted = seat.Split(" ");
-        foreach(string word in splitted){
-            string value = row + " : " + word;
+        for(int i = 0; i < splitted.Length; i++){
+            string value = row + " : " + splitted[i];
             Console.WriteLine(value);
-            Console.WriteLine(seats_map.IndexOf(value));
+            int idx = seats_map.IndexOf(value);
+            Console.WriteLine(idx);
             if(seats_map.Contains(value)){
-                seats_map[seats_map.IndexOf(value) + 1] = "Occupied";
+                seats_map[idx] = "Occupied";
             }
-            else if (seats_map[seats_map.IndexOf(value) + 1] == "Occupied") {
+            else if (seats_map[idx] == "Occupied") {
                 Console.WriteLine("These seats are taken");
             }
         }

@@ -64,8 +64,6 @@ namespace Cinema_application
                 else if (movie_to_watch == "stop"){
                     start_program = false;
                 }
-                // Create an instance of ChangeRequest by using the constructor in
-                // the derived class that takes four arguments.
             }
         }
 
