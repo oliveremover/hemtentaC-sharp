@@ -13,14 +13,13 @@ public class Movies
 
     protected List<string> seats_reserved = new List<string>();
     protected List<string> seats_avalible = new List<string>();
-    
     //Properties.
     protected int ID { get; set; }
     protected string Title { get; set; }
     protected string Description { get; set; }
     protected int MovieLength { get; set; }
     protected string Row { get; set; }
-    protected int Seat{ get; set; }
+    protected string Seat{ get; set; }
     protected string Number_of_tickets{ get; set; }
 
     // Default constructor. If a derived class does not invoke a base-
@@ -52,21 +51,24 @@ public class Movies
     // instance of WorkItem is created.
     protected int GetNextID() => ++currentID;
 
-    // Method Update enables you to update the title and job length of an
-    // existing WorkItem object.
-    public void Update_seat(string row, int seat)
+    // Method Update enables you to update seats to taken
+    public void Update_seat(string row, string seat)
     {
         this.Row = row;
         this.Seat = seat;
-
-        object value = row + " : " + seat;
-        Convert.ToString(value);
-        Console.WriteLine(value);
-        for(int i = 0; i < seats_map.Count; i++){
+        string[] splitted = seat.Split(" ");
+        foreach(string word in splitted){
+            string value = row + " : " + word;
+            Console.WriteLine(value);
+            Console.WriteLine(seats_map.IndexOf(value));
             if(seats_map.Contains(value)){
-                seats_map[i] = "Occupied";
+                seats_map[seats_map.IndexOf(value) + 1] = "Occupied";
+            }
+            else if (seats_map[seats_map.IndexOf(value) + 1] == "Occupied") {
+                Console.WriteLine("These seats are taken");
             }
         }
+        Console.WriteLine("You're tickets are booked");
     }
 
     public void create_seat_map(){
@@ -111,56 +113,15 @@ public class Movies
             seats_map.Add(value.ToString());
         }
     }
-    public void show_seat_map(string number_of_tickets)
+    public void show_seat_map()
         {
-        for(int i = 0; i < seats_map.Count;i++){
-            if (seats_map[i] == "Occupied" && seats_avalible.Count >= Int32.Parse(number_of_tickets)){
-                for(int o = 0; o < seats_avalible.Count; o++){
-                    seats_reserved.Add(seats_avalible[o]);
-                }
-                seats_avalible.Clear();
-            }
-            else{
-                seats_avalible.Add(seats_map[i]);
-            }
-        }
-        for(int i = 0; i < seats_avalible.Count; i++){
-            seats_reserved.Add(seats_avalible[i]);
-        }
-        for(int i = 0; i < seats_reserved.Count; i++){
-            Console.WriteLine(seats_reserved[i]);
+        for(int i = 0; i < seats_map.Count; i++){
+            Console.WriteLine(seats_map[i]);
         }
     }
     // Virtual method override of the ToString method that is inherited
     // from System.Object.
     public override string ToString() =>
         $"{this.ID} - {this.Title}";
-}
-
-// ChangeRequest derives from WorkItem and adds a property (originalItemID)
-// and two constructors.
-public class Book_seats : Movies
-{
-    // Constructors. Because neither constructor calls a base-class
-    // constructor explicitly, the default constructor in the base class
-    // is called implicitly. The base class must contain a default
-    // constructor.
-
-    // Default constructor for the derived class.
-    public Book_seats() { }
-
-    // Instance constructor that has four parameters.
-    public Book_seats(string row, int seat,
-                         int originalID)
-    {
-        // The following properties and the GetNexID method are inherited
-        // from WorkItem.
-        this.ID = GetNextID();
-        this.Row = row;
-        this.Seat = seat;
-
-        // Property originalItemId is a member of ChangeRequest, but not
-        // of WorkItem.
-    }
 }
 }
