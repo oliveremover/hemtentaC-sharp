@@ -1,0 +1,15 @@
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.csproj.AssemblyReference.cache
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.AssemblyInfoInputs.cache
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.AssemblyInfo.cs
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.csproj.CoreCompileInputs.cache
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/bin/Debug/net6.0/Uppgift_3
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/bin/Debug/net6.0/Uppgift_3.deps.json
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/bin/Debug/net6.0/Uppgift_3.runtimeconfig.json
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/bin/Debug/net6.0/Uppgift_3.dll
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/bin/Debug/net6.0/Uppgift_3.pdb
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.dll
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/refint/Uppgift_3.dll
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.pdb
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.genruntimeconfig.cache
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/ref/Uppgift_3.dll
