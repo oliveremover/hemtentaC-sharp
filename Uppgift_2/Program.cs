@@ -14,10 +14,10 @@ namespace Cinema_application
             movie1.create_seat_map();
             movie2.create_seat_map();
             bool start_program = true;
-            movie1.Update_seat("Row 1", "3");
-            movie1.Update_seat("Row 1", "5");
-            movie1.Update_seat("Row 1", "9");
-            movie1.Update_seat("Row 5", "7");
+            movie1.Update_seat("1", "3");
+            movie1.Update_seat("1", "5");
+            movie1.Update_seat("1", "9");
+            movie1.Update_seat("5", "7");
             while(start_program == true){
                 Console.WriteLine(" ");
                 Console.WriteLine(" ");

@@ -9,8 +9,6 @@ public class Movies
 
     protected List<string> seats_map = new List<string>();
 
-    protected List<string> seats_taken = new List<string>();
-
     protected List<string> seats_reserved = new List<string>();
     protected List<string> seats_avalible = new List<string>();
     //Properties.
@@ -20,7 +18,6 @@ public class Movies
     protected int MovieLength { get; set; }
     protected string Row { get; set; }
     protected string Seat{ get; set; }
-    protected string Number_of_tickets{ get; set; }
 
     // Default constructor. If a derived class does not invoke a base-
     // class constructor explicitly, the default constructor is called
@@ -58,17 +55,19 @@ public class Movies
         this.Seat = seat;
         string[] splitted = seat.Split(" ");
         for(int i = 0; i < splitted.Length; i++){
-            string value = row + " : " + splitted[i];
+            string value = "Row " + row + " : " + splitted[i];
             Console.WriteLine(value);
-            int idx = seats_map.IndexOf(value);
-            Console.WriteLine(idx);
             if(seats_map.Contains(value)){
+                int idx = seats_map.IndexOf(value);
                 seats_map[idx] = "Occupied";
+                tickets_are_booked();
             }
-            else if (seats_map[idx] == "Occupied") {
+            else {
                 Console.WriteLine("These seats are taken");
             }
         }
+    }
+    public void tickets_are_booked(){
         Console.WriteLine("You're tickets are booked");
     }
 
