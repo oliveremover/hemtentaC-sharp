@@ -1,6 +1,10 @@
 ﻿using System;
 namespace Apartment_application
 {
+    /// <summary>
+    /// Creates an object of Choices().
+    /// Object is then called with Start().
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -15,7 +19,9 @@ namespace Apartment_application
     {
         Apartment_complex obj = new Apartment_complex();
 
-        
+        /// <summary>
+        /// Contains the steps where the user interacts in the termninal. 
+        /// </summary>
         public void Start(){
             obj.viewer_have_choosen.Clear();
             Console.WriteLine("Choose your destiny!");
@@ -50,7 +56,9 @@ namespace Apartment_application
                 Error();
             }
         } 
-        
+        /// <summary>
+        /// Gives the user the options avalible.
+        /// </summary>
         void Choose_sizes(){
             Console.WriteLine(" ");
             Console.WriteLine("Begin by choosing size!");
@@ -61,6 +69,9 @@ namespace Apartment_application
                 obj.viewer_have_choosen.Add(obj.standard[i], "True");
             }
         }
+        /// <summary>
+        /// Gives the user the extra options that comes with the choosen size.
+        /// </summary>
         void Choose_additional(){
             Console.WriteLine(" ");
             Console.WriteLine("Add extra:");
@@ -72,7 +83,6 @@ namespace Apartment_application
             pre_list = split.Split(',').ToList();
             foreach(var l in pre_list)
             {
-                
                     if (obj.additional.Any(l.Contains)){
                         Console.WriteLine(l);
                         obj.viewer_have_choosen.Add(l, "True");
@@ -80,7 +90,9 @@ namespace Apartment_application
                 
             }
         }
-
+        /// <summary>
+        /// Gives the option of what type of kitchen islands avalible and adds the choosen one to the dictonary in Apartment_complex.
+        /// </summary>
         void Choose_kitchen_island(){
             Console.WriteLine(" ");
             Console.WriteLine("Choose kitchen island");
@@ -91,12 +103,18 @@ namespace Apartment_application
                 obj.viewer_have_choosen.Add(type, "True");
             }
         }
+        /// <summary>
+        /// Print out what the 1 room apartment comes with.
+        /// </summary>
         void One(){
             Console.WriteLine(" ");
             obj.standard[1] = "1 window";
             Console.WriteLine("The standard:");
             Console.WriteLine(string.Join(" : ", obj.standard));   
         }
+        /// <summary>
+        /// Print out what the 2 room apartment comes with.
+        /// </summary>
         void Two(){
             Console.WriteLine(" ");
             obj.standard[1] = "2 window";
@@ -105,6 +123,9 @@ namespace Apartment_application
             Console.WriteLine("Uniqe:");
             Console.WriteLine(obj.uniqe[0]);
         }
+        /// <summary>
+        /// Print out what the 3 room apartment comes with.
+        /// </summary>
         void Three(){
             Console.WriteLine(" ");
             obj.standard[1] = "4 window";
@@ -115,6 +136,9 @@ namespace Apartment_application
             obj.viewer_have_choosen.Add(obj.uniqe[0], "True");
             obj.viewer_have_choosen.Add(obj.uniqe[2], "True");
         }
+       /// <summary>
+        /// Print out what the 4 room apartment comes with.
+        /// </summary>
         void Four(){
             Console.WriteLine(" ");
             obj.standard[1] = "6 window";
@@ -126,12 +150,18 @@ namespace Apartment_application
                 obj.viewer_have_choosen.Add(obj.uniqe[i], "True");
             }
         } 
+        /// <summary>
+        /// If error occur, Error() is called and restarts the program.
+        /// </summary>
         void Error(){
             Console.WriteLine(" ");
             Console.WriteLine(" ");
             Console.WriteLine("Input not acceptable");
             Start();
         }
+        /// <summary>
+        /// Prints out the data from the Dictonary with the options the user has choosen.
+        /// </summary>
         void Print_dict(){
             Console.WriteLine(" ");
             Console.WriteLine(" ");
