@@ -79,14 +79,23 @@ public class Soda : Cart
                 Console.WriteLine(the_cart[i]);
             }
         }
+        /// <summary>
+        /// Removes the item user choose.
+        /// </summary>
+        /// <param name="item_to_remove">The item user inputed.</param>
         public void remove_item(string item_to_remove){
             
         }
-
+        /// <summary>
+        /// Prints out the total cost of the cart.
+        /// </summary>
         public void total_cost_of_cart(){
             int result = total_cost.Sum();
             Console.WriteLine(result + " kr");
         }
+        /// <summary>
+        /// Adds all the drinks in the selection.
+        /// </summary>
         public void input_drinks_to_list(){
             sodas.Add("Cola");
             sodas.Add("Pepsi");
@@ -97,6 +106,9 @@ public class Soda : Cart
             sodas.Add("Fanta tropical");
             sodas.Add("Fanta Orange");
         }
+        /// <summary>
+        /// Prints out all the drinks in sodas list.
+        /// </summary>
         public void out_put_drinks(){
             for(int i = 0; i < sodas.Count; i++){
                 Console.WriteLine(sodas[i]);
