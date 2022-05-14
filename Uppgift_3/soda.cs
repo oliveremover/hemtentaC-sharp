@@ -64,7 +64,7 @@ public class Soda : Cart
             
         }
         /// <summary>
-        /// Adds Soda to cart.
+        /// Adds Soda to cart. Also adds the cost 
         /// </summary>
         /// <param name="name_of_drink"></param>
         /// <param name="sugar"></param>
