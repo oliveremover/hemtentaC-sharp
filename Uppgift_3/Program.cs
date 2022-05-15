@@ -1,12 +1,11 @@
 ﻿using System;
 namespace Soda_application
 {
+    /// <summary>
+    /// The interface part where the user interacts. 
+    /// </summary>
     public class Soda_app
     {
-        public string drink { get; set; }
-        public string sugar { get; set; }
-        public string antal { get; set; }
-
         static void Main(string[] args)
         {
             bool running = true;
@@ -34,7 +33,6 @@ namespace Soda_application
                     Console.WriteLine("16 (I 4x4 back), 24 (I 6x4 back), 36 (I 6x6 back)");
                     Console.WriteLine("Choose how many:");
                     int option_type_antal = Convert.ToInt32(Console.ReadLine());
-                    if (new_cart.sodas.Contains())
                     new_cart.add_to_cart(option_type, option_type_zero, option_type_antal);
                     Console.WriteLine(" ");
                     Console.WriteLine("Item added");
@@ -44,8 +42,8 @@ namespace Soda_application
                     Console.WriteLine(" ");
                     new_cart.print_list();
                     Console.WriteLine(" ");
-                    Console.WriteLine("What Item do you want to remove:");
-                    string item_to_remove = Console.ReadLine();
+                    Console.WriteLine("What Item do you want to remove (by ID):");
+                    int item_to_remove = Convert.ToInt32(Console.ReadLine());
                     new_cart.remove_item(item_to_remove);
                 }
                 else if (option == "3"){

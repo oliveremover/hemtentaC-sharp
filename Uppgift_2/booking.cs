@@ -47,7 +47,7 @@ namespace Cinema_application
         static Movies() => currentID = 0;
 
         // currentID is a static field. It is incremented each time a new
-        // instance of WorkItem is created.
+        // instance of Movies is created.
         protected int GetNextID() => ++currentID;
 
         /// <summary>

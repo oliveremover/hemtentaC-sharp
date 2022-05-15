@@ -1,12 +1,11 @@
 using System.Linq;
 namespace Soda_application
 {
-public class Soda : Cart
+public class Soda : IEquatable<Soda>
 {
     private static int currentID;
     // Static field currentID stores the job ID of the last WorkItem that
     // has been created.
-    //protected List<Drink> youre_cart_mutherfucker = new List<Drink>();
     public int ID { get; set; }
     //Properties.
     public string Type_of_drink { get; set; }
@@ -18,19 +17,19 @@ public class Soda : Cart
     // implicitly.
     public Soda()
     {
-        ID = 0;
+        ID = GetNextID();
         Type_of_drink = "Drink type";
         Zero_or_not = "Shit or Hit";
         Antal = 0;
     }
 
     // Instance constructor that has three parameters.
-    public Soda(string type_of_drink, string zero_or_not, int antal)
+    public Soda(string type_of_drink, string zero_or_not, int antal_drinks)
     {
         this.ID = GetNextID();
         this.Type_of_drink = type_of_drink;
         this.Zero_or_not = zero_or_not;
-        this.Antal = antal;
+        this.Antal = antal_drinks;
     }
     // Static constructor to initialize the static member, currentID. This
     // constructor is called one time, automatically, before any instance
@@ -44,6 +43,12 @@ public class Soda : Cart
     // Virtual method override of the ToString method
     public override string ToString() =>
         $"{this.ID} - {this.Type_of_drink} - {this.Zero_or_not} - {this.Antal}";
+
+    public bool Equals(Soda other)
+        {
+            if (other == null) return false;
+            return (this.ID.Equals(other.ID));
+        }
 }
 
 
@@ -51,9 +56,9 @@ public class Soda : Cart
     /// Creates and stores the shopping cart of user. Also contains the method to change in the cart.
     /// </summary>
     public class Cart {
-        protected List<Soda> the_cart = new List<Soda>();
-        protected List<int> total_cost = new List<int>();
-        protected List<string> sodas = new List<string>();
+        public List<Soda> the_cart = new List<Soda>();
+        public List<int> total_cost = new List<int>();
+        public List<string> sodas = new List<string>();
         public String Name { get; set; }
         public Cart()
         {
@@ -70,7 +75,7 @@ public class Soda : Cart
         /// <param name="sugar"></param>
         /// <param name="many"></param>
         public void add_to_cart(string name_of_drink, string sugar, int many){
-            the_cart.Add(new Soda() { Type_of_drink = name_of_drink, Zero_or_not=sugar, Antal=many});
+            the_cart.Add(new Soda() {Type_of_drink = name_of_drink, Zero_or_not=sugar, Antal=many});
             total_cost.Add(many * 10);
 
         }
@@ -83,15 +88,23 @@ public class Soda : Cart
         /// Removes the item user choose.
         /// </summary>
         /// <param name="item_to_remove">The item user inputed.</param>
-        public void remove_item(string item_to_remove){
-            
+        public void remove_item(int item_to_remove){
+            Console.WriteLine(item_to_remove);
+            the_cart.Remove(new Soda() { ID = item_to_remove });
         }
         /// <summary>
         /// Prints out the total cost of the cart.
         /// </summary>
         public void total_cost_of_cart(){
-            int result = total_cost.Sum();
-            Console.WriteLine(result + " kr");
+            //int result = total_cost.Sum();
+            //Console.WriteLine(result + " kr");
+            List<int> list = new List<int>();
+                for (int i = 0; i < the_cart.Count; i++)
+                {
+                    list.Add(the_cart[i].Antal);
+                }
+                int total = list.Sum(x => Convert.ToInt32(x));
+            Console.WriteLine(total * 10 + " kr");
         }
         /// <summary>
         /// Adds all the drinks in the selection.
