@@ -96,8 +96,6 @@ public class Soda : IEquatable<Soda>
         /// Prints out the total cost of the cart.
         /// </summary>
         public void total_cost_of_cart(){
-            //int result = total_cost.Sum();
-            //Console.WriteLine(result + " kr");
             List<int> list = new List<int>();
                 for (int i = 0; i < the_cart.Count; i++)
                 {
@@ -120,7 +118,7 @@ public class Soda : IEquatable<Soda>
             sodas.Add("Fanta Orange");
         }
         /// <summary>
-        /// Prints out all the drinks in sodas list.
+        /// Prints out all the drinks in list sodas.
         /// </summary>
         public void out_put_drinks(){
             for(int i = 0; i < sodas.Count; i++){
