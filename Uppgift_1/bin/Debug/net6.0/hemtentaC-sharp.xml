@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>hemtentaC-sharp</name>
+    </assembly>
+    <members>
+        <member name="T:Apartment_application.Apartment_complex">
+            <summary>
+            Contains data of whats avalible when creating an apartment.
+            Also conatins the data of what the user have choosen.
+            </summary>
+        </member>
+        <member name="F:Apartment_application.Apartment_complex.viewer_have_choosen">
+            <summary>
+            Contains the data of what the user have choosen.
+            </summary>
+            <typeparam name="string">What choosen</typeparam>
+            <typeparam name="string">How many choosen</typeparam>
+        </member>
+        <member name="T:Apartment_application.Program">
+            <summary>
+            Creates an object of Choices().
+            Object is then called with Start().
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.Start">
+            <summary>
+            Contains the steps where the user interacts in the termninal. 
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.Choose_sizes">
+            <summary>
+            Gives the user the options avalible.
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.Choose_additional">
+            <summary>
+            Gives the user the extra options that comes with the choosen size.
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.Choose_kitchen_island">
+            <summary>
+            Gives the option of what type of kitchen islands avalible and adds the choosen one to the dictonary in Apartment_complex.
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.One">
+            <summary>
+            Print out what the 1 room apartment comes with.
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.Two">
+            <summary>
+            Print out what the 2 room apartment comes with.
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.Three">
+            <summary>
+            Print out what the 3 room apartment comes with.
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.Four">
+            <summary>
+            Print out what the 4 room apartment comes with.
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.Error">
+            <summary>
+            If error occur, Error() is called and restarts the program.
+            </summary>
+        </member>
+        <member name="M:Apartment_application.Choices.Print_dict">
+            <summary>
+            Prints out the data from the Dictonary with the options the user has choosen.
+            </summary>
+        </member>
+    </members>
+</doc>

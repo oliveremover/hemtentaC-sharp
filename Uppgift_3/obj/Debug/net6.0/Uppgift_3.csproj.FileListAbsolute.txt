@@ -13,3 +13,5 @@
 /Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.pdb
 /Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.genruntimeconfig.cache
 /Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/ref/Uppgift_3.dll
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/bin/Debug/net6.0/Uppgift_3.xml
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_3/obj/Debug/net6.0/Uppgift_3.xml

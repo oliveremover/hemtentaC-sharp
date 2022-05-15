@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Uppgift_3</name>
+    </assembly>
+    <members>
+        <member name="T:Soda_application.Soda_app">
+            <summary>
+            The interface part where the user interacts. 
+            </summary>
+        </member>
+        <member name="T:Soda_application.Cart">
+            <summary>
+            Creates and stores the shopping cart of user. Also contains the method to change in the cart.
+            </summary>
+        </member>
+        <member name="M:Soda_application.Cart.add_to_cart(System.String,System.String,System.Int32)">
+            <summary>
+            Adds Soda to cart. Also adds the cost 
+            </summary>
+            <param name="name_of_drink"></param>
+            <param name="sugar"></param>
+            <param name="many"></param>
+        </member>
+        <member name="M:Soda_application.Cart.remove_item(System.Int32)">
+            <summary>
+            Removes the item user choose.
+            </summary>
+            <param name="item_to_remove">The item user inputed.</param>
+        </member>
+        <member name="M:Soda_application.Cart.total_cost_of_cart">
+            <summary>
+            Prints out the total cost of the cart.
+            </summary>
+        </member>
+        <member name="M:Soda_application.Cart.input_drinks_to_list">
+            <summary>
+            Adds all the drinks in the selection.
+            </summary>
+        </member>
+        <member name="M:Soda_application.Cart.out_put_drinks">
+            <summary>
+            Prints out all the drinks in list sodas.
+            </summary>
+        </member>
+    </members>
+</doc>

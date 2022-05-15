@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>hemtentaC-sharp</name>
+    </assembly>
+    <members>
+        <member name="T:Cinema_application.Movies">
+            <summary>
+            Creates movies and keep tracks of seating.
+            </summary>
+        </member>
+        <member name="M:Cinema_application.Movies.Update_seat(System.String,System.String)">
+            <summary>
+            Method Update_seat() enables you to update seats to Occupied
+            </summary>
+            <param name="row">Contains user choose of row</param>
+            <param name="seat">Contains user choose of seats</param>
+        </member>
+        <member name="M:Cinema_application.Movies.tickets_are_booked">
+            <summary>
+            Prints out statement.
+            </summary>
+        </member>
+        <member name="M:Cinema_application.Movies.create_seat_map">
+            <summary>
+            Uses loops to add seats to seats_map
+            </summary>
+        </member>
+        <member name="M:Cinema_application.Movies.show_seat_map">
+            <summary>
+            Shows the seats avalible.
+            </summary>
+        </member>
+        <member name="T:Cinema_application.Booking">
+            <summary>
+            The part where the user can make choices and interact with the program. All classes are called here. 
+            </summary>
+        </member>
+    </members>
+</doc>

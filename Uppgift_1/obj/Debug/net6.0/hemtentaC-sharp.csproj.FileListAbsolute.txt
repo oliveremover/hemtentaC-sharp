@@ -43,3 +43,5 @@ C:/C#/hemtentaC-sharp/obj/Debug/net6.0/hemtentaC-sharp.genruntimeconfig.cache
 /Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/obj/Debug/net6.0/hemtentaC-sharp.pdb
 /Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/obj/Debug/net6.0/hemtentaC-sharp.genruntimeconfig.cache
 /Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/obj/Debug/net6.0/ref/hemtentaC-sharp.dll
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/bin/Debug/net6.0/hemtentaC-sharp.xml
+/Users/03cb01/Projects/C#/hemtentaC-sharp/Uppgift_1/obj/Debug/net6.0/hemtentaC-sharp.xml
