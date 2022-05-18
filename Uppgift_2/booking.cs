@@ -10,9 +10,6 @@ namespace Cinema_application
         private static int currentID;
 
         protected List<string> seats_map = new List<string>();
-
-        protected List<string> seats_reserved = new List<string>();
-        protected List<string> seats_avalible = new List<string>();
         //Properties.
         protected int ID { get; set; }
         protected string Title { get; set; }
