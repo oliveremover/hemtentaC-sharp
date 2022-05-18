@@ -67,6 +67,5 @@ namespace Soda_application
                 }
             }
         }
-
     }
 }
